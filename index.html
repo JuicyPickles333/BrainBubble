@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Brain Bubble Tutoring</title>
+        <link rel="icon" type="image/png" href="image/fAMS_TUTORING__1_-removebg-preview.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,200&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ef55a599cd.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Image/96 x 96.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onClick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onClick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Welcome to the Brain Bubble!</h1>
+                <p>We're a group of enthusiastic high school students ready to help you excel in math and <br> science, from grades 3 to 9.</p>
+                <a href="contact.html" class="hero-btn">Contact us to know more!</a>
+            </div>
+        </section>
+        <section class="tutors">
+            <h1>Meet Our Tutors</h1>
+            <p>We are all grade 11 students that have consistently earned honour roll! </p>
+            <div class = "row">
+                <div class="tutors-col">
+                    <img src="Image/AVA-modified.png">
+                    <h3>Ava S.</h3>
+                    <p>Meet Ava, a dedicated student with a passion for math and science who aspires to become a software engineer. She's excited about tutoring kids, leveraging her experience as a certified swimming instructor, where she's worked with a diverse range of ages. In her free time, Ava enjoys coding, indulging in video games, and playing her guitar.</p>
+                </div>
+                <div class="tutors-col">
+                    <img src="Image/mildred-modified.png">
+                    <h3>Mildred L.</h3>
+                    <p>
+                        Meet Mildred, a budding enthusiast of math and science with a deep passion for helping others understand these subjects. Her fascination with these subjects knows no bounds, and she's eager to share her knowledge by tutoring kids. Beyond her academic interests, Mildred finds joy in two equally captivating hobbies: drawing and playing video games.</p>
+                </div>
+                <div class="tutors-col">
+                    <img src="Image/SARAH-modified.png">
+                    <h3>Sarah M.</h3>
+                    <p>Meet Sarah, a bright student with a dream of becoming a chemical engineer. Her talent for mathematics is evident in her knack for solving complex problems.  Outside of her academic endeavors, Sarah enjoys indulging in her hobbies, which include diving into books and passionately following the world of hockey.</p>
+                </div>
+            </div>
+        </section>
+        <section class="feature">
+            <div class="title-text">
+                <h1>Why Choose Us</h1>
+            </div>
+            <div class="feature-box">
+                <div class="features">
+                    <h2>Virtual Tutoring</h2>
+                    <div class="features-desc">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p>Virtual tutoring offers the convenience of accessing assistance from the comfort of your home, eliminating the stress of commuting. Additionally, it provides a flexible schedule, allowing students to choose the most suitable time for their sessions, accommodating their lives.</p>
+                        </div>
+                    </div>
+                    <h2>Fun Lessons</h2>
+                    <div class="features-desc">
+                        <div class="feature-icon">
+                            <i class="fa-regular fa-face-laugh-beam"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p>We make learning fun with interactive activities like Kahoots and other knowledge-based games. These games not only reinforce academic concepts but also make studying an exciting adventure.</p>
+                        </div>
+                    </div>
+                    <h2>Absolutely Free</h2>
+                    <div class="features-desc">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p> We believe that every child should have access to quality education without financial barriers. That's why we're proud to offer our tutoring services absolutely free of charge.</p>
+                        </div>
+                    </div>
+                    <h2>Rewards System</h2>
+                    <div class="features-desc">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p>Our unique rewards system is designed to inspire and motivate young learners. Every student starts with an empty 'brain.' But as they achieve good test scores and show improvement, they unlock different parts of their 'brain.' It's a visual representation of their progress, and it's incredibly encouraging for kids.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-img">
+                    <img src="Image/SARAH+AVA.PNG">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Our goal is to help you succeed in math and science! Thank you for considering The Brain Bubble as a potential partner <br>in your academic success. Feel free to contact us on our different social media platforms, <br> by clicking the icons below. Let's grow together!</p>
+            <div class="icons">
+                <a href="https://discord.gg/ygskp22B3w" target="_blank" title="Join Our Discord Server!"><i class="fa-brands fa-discord"></i></a>
+                <a href="mailto:brainbubbletutoring@gmail.com"title="Email Us!"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.instagram.com/the_brain_buble/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
+    </body> 
+    <!--JAVA SCRIPT FOR TOGGLE MENU-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "200px";
+        }
+    </script>
+</html>
